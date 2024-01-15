@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PillPilot</title>
+    <script src="https://kit.fontawesome.com/f46ce87315.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+    <link href="Css/queso.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <article class="portada">
+        <h1 class="paradox" style="color:#FFF">
+            PillPilot
+        </h1>
+        <hr class="hr_m">
+        <div class="party-2">
+            <button class="btn-s" id="btn-abrir-popup">
+                OsdroiX
+            </button>
+            <button class="btn-s"  onclick="window.location.href='form.html'">
+                Escanear
+            </button>
+            <button class="btn-s" id="btn-abrir-popups">
+                Instrucciones
+            </button>
+        </div>
+    </article>
+    <article class="compuesto_c">
+        <div class="party">
+            <div class="libro">
+                <label style="font-size:1.7em;" class="mont_c">
+                    “Un proyecto relacionado con la automatización y mejora del proceso de identificación y extracción de
+                    información relevante de las recetas médicas.”
+                </label>
+            </div>
+                    <img class="body-main_c" src="https://aprende.com/wp-content/uploads/2020/11/disciplina.gif"> 
+            <div class="libro">
+                <center>
+                    <h5>
+                        Descarga el PDF de prueba.
+                    </h5>
+                    <hr>
+                    <img class="logo-D" src="https://pdfonline.org/images/main/pdf.png">
+                    <br>
+                    <br>
+                    <h1>
+                        <button class="btn btn-danger" onclick="descargarPDF()">Descargar PDF</button>
+                    </h1>
+                </center>
+            </div>
+
+            <script>
+                function descargarPDF() {
+                    // Crear un elemento <a> temporal
+                    var link = document.createElement('a');
+                    // Establecer el atributo href con la ruta del archivo PDF
+                    link.href = 'Archivero/p.pdf';  // Reemplaza 'ruta/al/pdf/p.pdf' con la ruta correcta de tu PDF
+                    // Establecer el atributo download con el nombre deseado del archivo
+                    link.download = 'archivodeprueba.pdf';  // Puedes cambiar el nombre del archivo si lo deseas
+
+                    // Agregar el enlace al DOM
+                    document.body.appendChild(link);
+
+                    // Simular un clic en el enlace para iniciar la descarga
+                    link.click();
+
+                    // Remover el enlace del DOM después de la descarga
+                    document.body.removeChild(link);
+                }
+            </script>
+
+
+        </div>
+    </article>
+    <div class="main-div">
+        <center>
+            <h1 class="ho">
+                ¿Qué es "PillPilot"?
+            </h1>
+        </center>
+    </div>
+    <article class="compuesto_c">
+        <div class="party">
+            <div  class="libro_c">
+                Objetivo.<hr>
+                Desarrollar un traductor y analizador de recetas médicas que permita mejorar la
+                precisión y eficiencia en la identificación de datos clave en las recetas médicas.
+                Contribuyendo a facilitar la tarea de los profesionales de la salud, así como asegurar
+                la seguridad y la atención de los pacientes
+            </div>
+            <div class="libro_c">
+                Este proyecto está enfocado a usuarios ligados al entorno médico
+                (especialistas y pacientes), cualquier individuo podrá analizar y obtener una
+                respuesta sobre conceptos que desconozca y desee entender. Lo que resulta
+                mucho más confiable porque estas definiciones están estrictamente seleccionadas
+                y verificadas de fuentes de información confiables referentes al área de la salud.
+            </div>
+            <div class="libro_c">
+                <center>
+                    <img class="logo-D" src="https://i.gifer.com/origin/b1/b18107f7e40e16f23be5f36416c569fa_w200.gif">
+                </center>
+            </div>
+        </div>
+    </article>
+    <div class="main-divc">
+        <center>
+            <h1 style="color:#FFF;" class="ho">
+                Beneficios
+            </h1>
+        </center>
+    </div>
+    <article class="compuesto_c">
+        <div class="party">
+            <div class="libro_c">
+                 Ahorro de tiempo y mejora la eficiencia en el proceso de identificación y extracción de información relevante de las recetas médicas para pacientes que deseen consultar una abreviatura desconocida. 
+            </div>
+            <div class="libro_c">
+                Reducción de errores en la identificación de los nombres de los medicamentos prescritos, dosis, vías de administración y frecuencias de uso para pacientes y farmacéuticos: La automatización también puede reducir los errores. Esto tiene un impacto significativo en la seguridad y efectividad del tratamiento de cada uno de los pacientes ya que reduce la necesidad de traductores humanos tengan que hacerlo manualmente. 
+            </div>
+            <div class="libro_c">
+                Mejora en la atención al paciente y la empatía del médico: Al tener información precisa y completa de las recetas médicas, los profesionales de la salud pueden brindar una atención más efectiva y personalizada a los pacientes.
+            </div>
+        </div>
+    </article>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+              <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+              <h1 class="paradox-a">
+                    ¿Quién es OsdroiX?
+              </h1>
+              <div class="howl">
+                <div class="party">                   
+                    <img class="logo" src="IMG/Quintero.jpg">
+                     <label class="lss">
+                         Mi nombre completo es Oscar Quintero Hernández
+                         y actualmente tengo 23 años. Me esfuerzo constantemente 
+                         por alejarme de lo negativo en el mundo y trabajar 
+                         incansablemente para construir lo mejor que pueda. 
+                         Con una dedicación inquebrantable, he acumulado 6 
+                         años de experiencia desde que descubrí mi vocación 
+                         en el Centro de Estudios Científicos y Tecnológicos No. 9 
+                         "Juan de Dios Bátiz". En la actualidad, me encuentro 
+                         inmerso en el desarrollo de mis propios proyectos y 
+                         en la gestación de mi propia empresa.
+                         
+                        <h6>
+                            MI GITHUB.
+                        </h6>
+                        <div class="party">
+                           <img src="IMG/descargar.png" width="50" height="50">
+                           <a href="https://github.com/osdroix" class="btn btn-success">Perfil</a>
+                        </div>
+                     </label>
+                </div>
+              </div>
+        </div>
+    </div>
+        <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+              <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+              <h1 class="paradox-a">
+                    ¿Quién es OsdroiX?
+              </h1>
+              <div class="howl">
+                <div class="party">                   
+                    <img class="logo" src="IMG/Quintero.jpg">
+                     <label class="lss">
+                         Mi nombre completo es Oscar Quintero Hernández
+                         y actualmente tengo 23 años. Me esfuerzo constantemente 
+                         por alejarme de lo negativo en el mundo y trabajar 
+                         incansablemente para construir lo mejor que pueda. 
+                         Con una dedicación inquebrantable, he acumulado 6 
+                         años de experiencia desde que descubrí mi vocación 
+                         en el Centro de Estudios Científicos y Tecnológicos No. 9 
+                         "Juan de Dios Bátiz". En la actualidad, me encuentro 
+                         inmerso en el desarrollo de mis propios proyectos y 
+                         en la gestación de mi propia empresa.
+                         
+                        <h6>
+                            MI GITHUB.
+                        </h6>
+                        <div class="party">
+                           <img src="IMG/descargar.png" width="50" height="50">
+                           <a href="https://github.com/osdroix" class="btn btn-success">Perfil</a>
+                        </div>
+                     </label>
+                </div>
+              </div>
+        </div>
+    </div>
+
+<div class="overlay" id="overlays">
+    <div class="popup" id="popups">
+        <a href="#" id="btn-cerrar-popups" class="btn-cerrar-popup">Regresar</a> 
+        <h1 class="paradox-a">
+                    Instrucciones.
+        </h1>
+        <div class="howl_s">
+          <label>
+            1.Verifica si se han seleccionado archivos PDF.<br>
+            2.Muestra un mensaje de error si no se seleccionan archivos o si el archivo no es un PDF.<br>
+            3.Carga el archivo PDF usando FileReader.<br>
+            4.Utiliza la biblioteca PDF.js para extraer el contenido de texto de la primera página del archivo PDF.<br>
+            5.Muestra un mensaje de error si el archivo está vacío.<br>
+            6.Proporciona un botón para que los usuarios descarguen los resultados en un archivo de texto.<br>
+            7.Genera un nombre de archivo único basado en la fecha actual.<br>
+            8.Crea un objeto Blob con el contenido de texto y un enlace de descarga para el archivo.<br>
+            9.Descarga el archivo al hacer clic en el botón.<br>
+            10.Actualiza la página para eliminar mensajes de error y reiniciar la aplicación.
+          </label>
+      </div>
+</div>
+        
+
+<script src="Js/ouler.js"></script>
+</body>
+</html>

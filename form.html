@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="Css/ventanas.css">
+    <link rel="stylesheet" type="text/css" href="Css/reset.css">
+
+    <title>PillPilot</title>
+  </head>
+<body >
+    <article class="dise">
+      <div class="party2">
+              <h1 class="datea">PillPilot</h1>
+      </div>
+      <div class="inf">
+        <button type="button" class="btn btn-info" style="display:none;"  id="btn-abrir-popup">Info</button>
+      </div>
+      <div class="control-form">
+      <h5>- Escanea tú receta medica. -</h5>
+      <br>
+      <div class="haber">
+      <label for="file" class="custom-file-upload">
+        <img src="https://cdn.dribbble.com/users/4484574/screenshots/16287651/essential_web_icon_animation.gif" class="img">
+        <h6 style="color:#45B3FF "id="preview">Selecciona Archivo</h6>
+        </label>
+      <input type="file" class="quitar" id="file" accept="application/pdf" required style="display:none;">
+      </div>
+      <hr>
+      <p>Escanea Y Observa</p>
+      <button class="btn-pil" id="extract">Procesar</button>
+      <div class="open" id="output">
+      </div>
+            <button class="btn btn-link" onclick="window.location.href='index.html'">
+                Regresar  
+            </button>
+    </div>  
+    </article>
+
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">Regresar</a><hr>
+        <div>
+          <h6>
+            Instrucciones PillPilot 
+          </h6>
+          <label>
+            1.Verifica si se han seleccionado archivos PDF.<br>
+            2.Muestra un mensaje de error si no se seleccionan archivos o si el archivo no es un PDF.<br>
+            3.Carga el archivo PDF usando FileReader.<br>
+            4.Utiliza la biblioteca PDF.js para extraer el contenido de texto de la primera página del archivo PDF.<br>
+            5.Muestra un mensaje de error si el archivo está vacío.<br>
+            6.Proporciona un botón para que los usuarios descarguen los resultados en un archivo de texto.<br>
+            7.Genera un nombre de archivo único basado en la fecha actual.<br>
+            8.Crea un objeto Blob con el contenido de texto y un enlace de descarga para el archivo.<br>
+            9.Descarga el archivo al hacer clic en el botón.<br>
+            10.Actualiza la página para eliminar mensajes de error y reiniciar la aplicación.
+          </label>
+      </div>
+</div>
+          
+
+    <!-- pdf.js y el script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="Js/backend.js"></script>
+
+  </body>
+</html>

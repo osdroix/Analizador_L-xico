@@ -1,0 +1,139 @@
+.dise {
+  background: url(https://images6.alphacoders.com/954/954236.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  padding: 30px;
+  border-bottom-left-radius:100%;
+  border-bottom-right-radius:100%;
+}
+
+.party2{
+  display: flex;
+}
+
+.control-form{
+  background:#fff;
+  border-color:rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid; 
+  border-radius:2%;
+  padding:3%;
+  text-align: center;
+  width:30%;
+  margin: auto; /* Para centrar horizontalmente */
+  position: absolute; /* Para centrar verticalmente */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
+.inf {
+    position: fixed;
+    z-index: 9999;
+    margin-left:72%;
+    margin-top:8%
+}
+.datea {
+  color:#F2F2F2;
+}
+.error{
+    color:#C43E1C;
+}
+.party{
+        float: right;
+        margin-top:-60px;
+        margin-right:50px;
+}
+.btn-pil{
+ text-decoration: none;
+    display:inline-block;
+    width:35%;
+    padding:10px;
+    border: 1px solid #45B3FF;
+    border-radius:6px;
+    text-decoration: none;
+    color:#45B3FF;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    background: #fff;
+}
+.btn-pil:hover{
+ 
+    background: #45B3FF;
+    color:white;
+
+  }.btn-pilD{
+    text-decoration: none;
+    width:80%;
+    padding:6px;
+    border: 1px solid #45B3FF;
+    border-radius:6px;
+    text-decoration: none;
+    color:#fFF;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    background: #45B3FF;
+}
+.btn-pilD:hover{
+    border: 1px solid #A6E228; 
+    background: #A6E228;
+    color:white;
+
+  }
+.limpia{
+    margin-bottom: 20px;
+    margin-left:72%;
+    text-align: center;
+}
+.cool{
+    color:#45B3FF;
+  /*Para el diseño del input file*/
+}
+.logo-D{
+  width:50%;
+  height:auto;
+}
+
+.haber {
+  background: #F7FBFF;
+  border-color: #72C7F4;
+  border-width: 2px;
+  border-style: dashed; /* changed to dashed */
+  border-radius: 5%;
+  padding: 3%;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  margin: auto; /* To center horizontally */
+  transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+.haber:hover {
+  border-color:#48D093; /* Change the background color on hover */
+}
+.img{
+width:100%;
+}
+
+/* Para pantallas más pequeñas que 600px */
+@media (max-width: 480px) {
+  .control-form {
+    width: 80%;
+  }
+}
+
+/* Para pantallas más grandes que 600px */
+@media (min-width: 480px) {
+  .dise {
+    height: 70vh;
+  }
+  .datea {
+  color:#2B373D;
+}
+}
