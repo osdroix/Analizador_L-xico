@@ -1,0 +1,2 @@
+Un proyecto relacionado con la automatización y mejora del proceso de identificación y extracción de información relevante de las recetas médicas.
+un traductor y analizador de recetas médicas que permita mejorar la precisión y eficiencia en la identificación de datos clave en las recetas médicas. Contribuyendo a facilitar la tarea de los profesionales de la salud, así como asegurar la seguridad y la atención de los pacientes
